@@ -1,13 +1,13 @@
-// src/App.js
 import React from 'react';
-import LoginPage from './pages/LoginPage';
+import AuthPage from './pages/AuthPage';
+import './index.css';
 
 function App() {
   return (
     <div className="App">
-      <LoginPage />
+      <AuthPage />
     </div>
   );
 }
 
-export default App; // Должен быть экспорт по умолчанию
+export default App;
