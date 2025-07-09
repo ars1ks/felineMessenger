@@ -12,7 +12,7 @@ const AuthPage = () => {
 
   return (
     <div className="auth-page">
-      <StaticBackground /> {/* Заменили VideoBackground */}
+      <StaticBackground /> 
       <CardContainer isFlipped={isFlipped}>
         <AuthCard 
           isFlipped={isFlipped} 

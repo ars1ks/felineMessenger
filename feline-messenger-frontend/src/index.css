@@ -16,16 +16,18 @@ body {
   position: relative;
 }
 
-.auth-page {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* 🎥 Video background */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
 }
 
-
+/* 🎴 Card styles */
 .card-container {
   display: flex;
   justify-content: center;
@@ -56,6 +58,7 @@ body {
   border-radius: 10px;
   padding: 30px 40px;
   backface-visibility: hidden;
+  transition: opacity 0.3s ease;
 }
 
 .card-front {
@@ -65,10 +68,6 @@ body {
 
 .card-back {
   transform: rotateY(180deg);
-}
-
-.hidden {
-  display: none;
 }
 
 .card-face h1 {
@@ -140,12 +139,6 @@ body {
   color: #333;
   font-weight: 600;
   outline: none;
-  transition: all 0.3s ease;
-}
-
-.btn:hover {
-  background: #f0f0f0;
-  transform: translateY(-2px);
 }
 
 .register-link {
