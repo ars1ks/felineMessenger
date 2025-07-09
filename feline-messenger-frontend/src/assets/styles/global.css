@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-bg: linear-gradient(45deg, #6a11cb, #2575fc);
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --text-light: #ffffff;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Добавьте эти стили, если они отсутствуют в компонентах */
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 25px;
+}
+
+.remember-forgot label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+  color: #e0e0ff;
+}
+
+.register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 25px 0 15px;
+}
+
+.register-link p a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+  color: #e0e0ff;
+}
