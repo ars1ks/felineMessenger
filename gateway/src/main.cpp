@@ -2,7 +2,6 @@
 #include <memory>
 #include <string>
 #include <grpcpp/grpcpp.h>
-
 using grpc::Server;
 using grpc::ServerBuilder;
 using grpc::ServerContext;
@@ -18,20 +17,13 @@ class GatewayServiceImpl final : public ApiGateway::Service {
 public:
     Status GetUser(ServerContext* context, const UserRequest* request, UserResponse* response) override {
         std::cout << "[Gateway] Received GetUser for ID: " << request->user_id() << std::endl;
-        
         // Вызов микросервиса тута
-        
     }
-
     Status GetProduct(ServerContext* context, const ProductRequest* request, ProductResponse* response) override {
         std::cout << "[Gateway] Received GetProduct for ID: " << request->product_id() << std::endl;
-        
         //вызов микросервисОВ
     }
-
     // ТУТА инциализация клиента
-    
-
 private:
 
 };
